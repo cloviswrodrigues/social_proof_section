@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* Primary */
+    --very_dark_magenta: hsl(300, 43%, 22%);
+    --soft_pink: hsl(333, 80%, 67%);
+
+/* Neutral */
+    --dark_grayish_magenta: hsl(303, 10%, 53%);
+    --light_grayish_magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: Spartan, sans-serif;
+    
+}
+
+body {
+    background-color: var(--white);
+    padding: 0 1rem;
+}
+
+.top {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 2rem;
+    color: var(--very_dark_magenta);
+    padding: 0 2rem;
+    font-weight: 700;
+}
+
+.top p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--dark_grayish_magenta);
+}
+
+.rateds {
+    margin-top: 2rem;
+}
+
+.rateds .rated {
+    color: var(--very_dark_magenta);
+    height: 4rem;
+    background-color: var(--light_grayish_magenta);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.cards {
+    margin-top: 3rem;
+}
+
+.cards .card {
+    background-color: var(--very_dark_magenta);
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
