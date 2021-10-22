@@ -63,6 +63,19 @@ body {
     vertical-align: bottom;
 }
 
+.rateds .rated::before {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 85px;
+    height: 50%;
+    background-image: url(/frontend/assets/icon-star.svg);
+    background-repeat: repeat-x;
+}
+
+.rateds .rated span {
+}
+
 .cards {
     margin-top: 3rem;
 }
@@ -70,8 +83,37 @@ body {
 .cards .card {
     background-color: var(--very_dark_magenta);
     border-radius: 10px;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 2rem;
     margin-bottom: 1rem;
     color: var(--white);
 }
+
+.cards card::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(/frontend/assets/image-colton.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;   
+}
+
+.user1 {
+
+}
+
+.user2 {
+    
+}
+
+.user3 {
+
+}
+
+.card .profile {
+    display: inline-block;
+}
+
+
 
