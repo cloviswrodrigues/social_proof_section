@@ -90,6 +90,8 @@ body {
 }
 
 .cards .card {
+    width: 345px;
+    height: 251px;
     background-color: var(--very_dark_magenta);
     border-radius: 10px;
     padding: 2.5rem 2.5rem;
@@ -123,4 +125,38 @@ body {
 .card .content {
     font-size: .9rem;
     line-height: 1.4rem;
+}
+
+
+@media screen and (min-width: 700px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5rem;
+    }
+
+    .top, .rateds {
+        width: 50%;
+        height: 50%;
+        margin-top: 4rem;
+    }
+
+    .top {
+        text-align: left;
+        padding-right: 4rem;
+    }
+
+    .top h1 {
+        font-size: 3rem;
+        padding: 0;
+    }
+
+    .cards {
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }    
 }
