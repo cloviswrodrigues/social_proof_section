@@ -26,6 +26,15 @@ html {
 body {
     background-color: var(--white);
     padding: 0 1rem;
+    background-image: url(/frontend/assets/bg-pattern-top-mobile.svg)
+                    , url(/frontend/assets/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
+.top, .rateds, .cards {
+    margin: 0 auto;
+    width: 345px;
 }
 
 .top {
@@ -54,7 +63,7 @@ body {
 
 .rateds .rated {
     color: var(--very_dark_magenta);
-    height: 4rem;
+    height: 5rem;
     background-color: var(--light_grayish_magenta);
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -63,17 +72,17 @@ body {
     vertical-align: bottom;
 }
 
-.rateds .rated::before {
-    content: '';
-    display: block;
-    margin: auto;
-    width: 85px;
-    height: 50%;
-    background-image: url(/frontend/assets/icon-star.svg);
-    background-repeat: repeat-x;
+.rated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.rateds .rated span {
+.rated .starts {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 32%;
+    margin-bottom: 15px;
 }
 
 .cards {
@@ -101,7 +110,7 @@ body {
     width: 50px;
 }
 
-.card .profile h2, p{
+.card .profile h2, .profile  p{
     font-size: .9rem;
     margin-left: 70px;
 }
